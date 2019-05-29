@@ -1,0 +1,9 @@
+<div class="m-content">
+  <h1>Manage Products</h1>
+  <a [routerLink]="['new']">
+    <button class="m-button-new" mat-flat-button color="primary" >New Product</button>
+  </a>
+  <ng-container *ngFor="let p of products$ | async">
+    <app-admin-product-item [product]="p"></app-admin-product-item>
+  </ng-container>
+</div>

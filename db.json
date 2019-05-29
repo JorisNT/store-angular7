@@ -1,0 +1,74 @@
+{
+  "categories": [
+    {
+      "id": "pastry",
+      "name": "Pastry"
+    },
+    {
+      "id": "fruits_vegetables",
+      "name": "Fruits & Vegetables"
+    },
+    {
+      "id": "pasta",
+      "name": "Fresh Pasta"
+    }
+  ],
+  "products": [
+    {
+      "name": "Alfajor",
+      "categoryId": "pastry",
+      "description": "Pastry strips filled with dulce de leche",
+      "price": 4.28,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Alfajor_H.jpg",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "categoryId": "pastry",
+      "name": "Berliner",
+      "description": "Berliner Pfannkuchen is a traditional North German-Central European pastry similar to a doughnut with no central hole made from sweet yeast dough fried in fat or oil",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Berliner-Pfannkuchen.jpg",
+      "price": 1.85
+    },
+    {
+      "id": "3",
+      "categoryId": "pastry",
+      "name": "Charlotte",
+      "description": "A type of trifle that can be served hot or cold. It can also be known as an ice-box cake",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Charlotte_aux_poires_et_chocolat.jpg",
+      "price": 5.6
+    },
+    {
+      "id": "6",
+      "categoryId": "pasta",
+      "name": "Bigoli",
+      "description": "Thick, softer, spaghetti-like pasta. Made with whole wheat rather than durum",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Bigoli2.jpg",
+      "price": 1.35
+    },
+    {
+      "id": "7",
+      "categoryId": "pasta",
+      "name": "Fettucine",
+      "description": "Ribbon of pasta approximately 6.5 millimeters wide. Larger and thicker than tagliatelle",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Fettuccine.jpg",
+      "price": 1.85
+    },
+    {
+      "id": "8",
+      "categoryId": "pasta",
+      "name": "Mafalde",
+      "description": "Long rectangular ribbons with ruffled sides",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Reginette.jpg",
+      "price": 2.4
+    },
+    {
+      "name": "Avocado",
+      "categoryId": "fruits_vegetables",
+      "description": "The avocado (Persea americana), a tree with probable origin in South Central Mexico, is classified as a member of the flowering plant family Lauraceae",
+      "price": 2.49,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Avocado_with_cross_section_edit.jpg",
+      "id": "hqFKVYs"
+    }
+  ]
+}

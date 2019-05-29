@@ -1,0 +1,11 @@
+<div class="m-card">
+  <div class="m-card-content">
+    <img *ngIf="product.imageUrl" [src]="product.imageUrl" [alt]="product.name" class="m-responsive">
+    <span> {{ product.name }}</span>
+    <span> {{ product.price | currency:"EUR":"symbol" }}</span>
+    <button mat-icon-button class="m-edit-icon" [routerLink]="[product.id]">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+  <mat-divider class="m-divider"></mat-divider>
+</div>

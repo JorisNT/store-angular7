@@ -1,0 +1,20 @@
+.m-edit-icon {
+  color: gray;
+}
+.m-card {
+  margin: 20px;
+  width: 600px;
+}
+.m-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.m-responsive {
+  width: auto;
+  height: 50px;
+  border-radius: 100%;
+}
+.m-divider {
+  margin-top: 5px;
+}

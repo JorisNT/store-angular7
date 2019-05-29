@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="m-toolbar">
+  <div class="m-container">
+    <div class="m-spacer">
+      <a routerLink="/"><mat-icon class="logo">shopping_basket</mat-icon></a>
+      <div>
+        <a
+          *ngIf="isAdmin$ | async"
+          [routerLink]="['admin/products']"
+        >
+          <button mat-button>Manage Products</button>
+        </a>
+        <app-mode></app-mode>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

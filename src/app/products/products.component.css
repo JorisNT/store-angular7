@@ -1,0 +1,10 @@
+.m-content {
+  display: flex;
+}
+.m-products {
+  display: flex;
+  margin-left: 40px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+

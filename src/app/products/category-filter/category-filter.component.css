@@ -1,0 +1,20 @@
+.m-category {
+  display: flex;
+  align-items: flex-start;
+}
+.m-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+.m-category mat-nav-list {
+  width: 200px;
+  border: 1px solid gainsboro;
+}
+.m-active {
+  background: #3F51B5 !important;
+  color: white;
+}
+.mat-list-base {
+  padding-top: 0;
+}

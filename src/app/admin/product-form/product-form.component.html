@@ -1,0 +1,51 @@
+<h1>{{ productId ? 'Update' : 'New' }} Product</h1>
+
+<div class="m-container">
+  <div class="m-form-container">
+    <form #f="ngForm" (ngSubmit)="onSave(f.value)">
+      <div class="m-form-content">
+        <mat-form-field>
+          <input matInput #name="ngModel" [(ngModel)]="product.name" name="name" placeholder="Name" required>
+          <mat-error *ngIf="name.touched && name.invalid">Name is required</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Category</mat-label>
+          <mat-select #category="ngModel" [(ngModel)]="product.categoryId" name="categoryId" required>
+            <mat-option value=""></mat-option>
+            <mat-option *ngFor="let c of categories$ | async" [value]="c.id">
+              {{ c.name }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="category.touched && category.invalid">Category is required</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <textarea matInput [(ngModel)]="product.description" name="description" placeholder="Description"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput #price="ngModel" [(ngModel)]="product.price" name="price" type="number" placeholder="Price" required [min]="0">
+          <mat-icon matSuffix>euro_symbol</mat-icon>
+          <mat-error *ngIf="price.hasError('required')">Price is required</mat-error>
+          <mat-error *ngIf="price.hasError('min')">Price should be higher than 0</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput #imageUrl="ngModel" [(ngModel)]="product.imageUrl" name="imageUrl" placeholder="Image Url" url required>
+          <mat-error *ngIf="imageUrl.hasError('required')">Image Url is required</mat-error>
+          <mat-error *ngIf="imageUrl.hasError('url')">Image Url is invalid</mat-error>
+        </mat-form-field>
+        <br>
+        <div class="m-buttons">
+          <button mat-raised-button color="primary">Save</button>
+          <button type="button" *ngIf="productId" mat-raised-button color="warn" (click)="onDelete()">Delete</button>
+          <a [routerLink]="['/admin/products']">
+            <button type="button" mat-raised-button>Cancel</button>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="m-form-preview">
+    <app-product-card [product]="product"></app-product-card>
+  </div>
+</div>
+<br><br><br>

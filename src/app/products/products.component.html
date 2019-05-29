@@ -1,0 +1,8 @@
+<div class="m-content">
+  <app-category-filter [category]="category"></app-category-filter>
+  <div class="m-products">
+    <ng-container *ngFor="let p of filteredProducts">
+      <app-product-card [product]="p"></app-product-card>
+    </ng-container>
+  </div>
+</div>

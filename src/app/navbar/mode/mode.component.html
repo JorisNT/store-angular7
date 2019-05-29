@@ -1,0 +1,10 @@
+<mat-form-field class="m-select">
+  <mat-select
+    [value]="selectedMode"
+    (selectionChange)="handleChangeMode($event)"
+  >
+    <mat-option *ngFor="let mode of modes" [value]="mode">
+      {{ mode }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

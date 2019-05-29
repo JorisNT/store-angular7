@@ -1,0 +1,21 @@
+<div class="m-category m-sticky">
+  <mat-nav-list>
+    <a mat-list-item
+      routerLink="/"
+      [class.m-active]="!category"
+    >
+      All Categories
+    </a>
+    <mat-divider></mat-divider>
+    <ng-container *ngFor="let c of categories$ | async">
+      <a mat-list-item
+        routerLink="/"
+        [queryParams]="{ category: c.id }"
+        [class.m-active]="category === c.id"
+      >
+        {{ c.name }}
+      </a>
+      <mat-divider></mat-divider>
+    </ng-container>
+  </mat-nav-list>
+</div>

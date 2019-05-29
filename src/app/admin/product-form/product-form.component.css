@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+.m-container {
+  display: flex;
+  justify-content: space-between;
+}
+.m-form-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 250px;
+}
+.m-buttons {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.m-buttons button {
+  margin: 5px;
+}

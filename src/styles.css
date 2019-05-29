@@ -1,0 +1,11 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  padding-top: 80px;
+}
+
+.m-container {
+  max-width: 899;
+  width: 80%;
+  margin: auto;
+}

@@ -1,0 +1,24 @@
+.m-toolbar {
+  position: fixed;
+  margin-top: -90px;
+  z-index: 100;
+}
+.m-icon {
+  padding: 0 14px;
+}
+
+.m-spacer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  color: white;
+  margin-right: 10px;
+}
+
+.logo {
+  color: white;
+  font-size: 45px;
+}
